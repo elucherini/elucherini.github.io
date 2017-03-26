@@ -285,3 +285,15 @@ footer {
 .bigger {
 	font-size: 16px;
 }
+
+.highlights
+{
+	text-transform:uppercase;
+	font-size:10px;
+	font-weight:300;
+	color:#F2F2F2;
+	background-color:#530000;
+	margin-left:7px;
+	padding-left:1px;
+	padding-right:1px;
+}
