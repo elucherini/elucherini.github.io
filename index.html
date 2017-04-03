@@ -11,6 +11,11 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+	<script type="text/javascript">
+		var host = "elenalucherini.com";
+		if ((host == window.location.host) && (window.location.protocol != "https:"))
+			window.location.protocol = "https";
+	</script>
   </head>
   <body>
     <div class="wrapper">
@@ -41,12 +46,9 @@
 		</p>
 		<p class="bigger"><strong>Curriculum Vitae:</strong> <a href="assets/pdf/cv_elucherini.pdf" target="_blank">[pdf]</a></p>
 		
-        <h2>Current work @ MPI-SWS</h2>
+        <h2>Current work: Master's thesis @ MPI-SWS</h2>
 		<p>
-			As part of my Master's thesis, I am investigating methods to improve the isolation 
-			and predictability of real-time applications on multicore platforms. In particular, 
-			I am implementing a software-based cache-partitioning mechanism called <em>page coloring</em> 
-			on Linux PREEMPT-RT in order to mitigate the effects of cache interference.
+			I am implementing a software-based cache partitioning mechanism, called <em>page coloring</em>, on Linux PREEMPT-RT. In order to reduce interference caused by shared caches on multicore platforms, a portion of the last-level cache is exclusively dedicated to real-time applications, improving their predictability. In this implementation, kernel processes are restricted to an exclusive (different) partition in the last-level cache, as well. This effectively leads to a higher degree of isolation compared to previous implementation efforts.
 		</p>
 		
 		<h2>Education</h2>
@@ -64,7 +66,7 @@
 			<li><strong>Event-triggering system with iBeacon (Bluetooth Low Energy)</strong> in Node.js:
 				noise filtering, event logging, and possibility of seamlessly adding custom third-party events.
 				<a href="https://github.com/elucherini/beacube/" target="_blank">[GitHub]</a> <a href="assets/pdf/beacube.pdf">[pdf]</a></li>
-			<li><strong>Scale distributed application</strong> of monitoring of ski tracks and avalanches, on Contiki OS.
+			<li><strong>Scaled distributed application</strong> of monitoring of ski tracks and avalanches, on Contiki OS.
 				<a href="https://github.com/elucherini/iot-snow-level-monitoring" target="_blank">[GitHub]</a> <a href="assets/pdf/snow.pdf">[pdf]</a></li>
 			<li><strong>Web interface for the visualization of official data</strong>
 				about the quality of the air in Italy (Bachelor's thesis). <a href="http://anasim.iet.unipi.it/moniqa/">[web]</a>
