@@ -107,6 +107,8 @@ th {
 
 img {
   max-width:100%;
+  margin-bottom:0px;
+  padding-bottom:0px;
 }
 
 header {
@@ -212,6 +214,7 @@ footer {
   position:fixed;
   bottom:50px;
   -webkit-font-smoothing:subpixel-antialiased;
+  line-height:10px;
 }
 
 @media print, screen and (max-width: 960px) {
@@ -303,4 +306,9 @@ footer {
 	margin-left:7px;
 	padding-left:1px;
 	padding-right:1px;
+}
+
+#copyright {
+  margin-bottom:0.7em;
+  padding:0px;
 }
