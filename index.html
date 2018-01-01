@@ -27,23 +27,6 @@
 	ga('send', 'pageview');
 
 	</script>
-	  <!-- Facebook Pixel Code -->
-	<script>
-	  !function(f,b,e,v,n,t,s)
-	  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-	  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-	  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-	  n.queue=[];t=b.createElement(e);t.async=!0;
-	  t.src=v;s=b.getElementsByTagName(e)[0];
-	  s.parentNode.insertBefore(t,s)}(window, document,'script',
-	  'https://connect.facebook.net/en_US/fbevents.js');
-	  fbq('init', '1675881365819427');
-	  fbq('track', 'PageView');
-	</script>
-	<noscript><img height="1" width="1" style="display:none"
-	  src="https://www.facebook.com/tr?id=1675881365819427&ev=PageView&noscript=1"
-	/></noscript>
-	<!-- End Facebook Pixel Code -->
 
   </head>
   <body>
@@ -51,12 +34,11 @@
       <header>
         <h1 id="myname">Elena Lucherini</h1>
 		<img src="assets/img/photo.jpg" id="photo"><br>
-		<p>M.Sc. student @ SSSUP<br>
-			Research intern @ MPI-SWS<br>
+		<p>Visiting Researcher @ Northeastern<br>
 		</p>
 
 		<img class="email" src="assets/img/eleluche.svg"><br>
-		<img class="email" src="assets/img/elucherini.svg"><br>
+		<!--<img class="email" src="assets/img/elucherini.svg"><br>-->
 
 		
 
@@ -64,53 +46,45 @@
       <section>
         <h1>About</h1>
 
-        <p class="bigger">I am a M.Sc. student in Embedded Computing Systems at
-			<a href="https://www.santannapisa.it/">Scuola Superiore Sant'Anna</a>
-			and <a href="https://www.unipi.it/">University of Pisa</a>.
+        <p class="bigger">I am a visiting researcher at Northeastern University in Boston, advised by <a href="https://mislove.org">Alan Mislove</a>.
 		</p>
-		<p class="bigger">I am currently working on my Master's thesis at
-			<a href="https://www.mpi-sws.org/">The Max Planck Institute for Software Systems</a>,
+		<p class="bigger">Previously, I was a M.Sc. student at Sant'Anna School of Advanced Studies in Pisa. I developed my Master's thesis at the
+			<a href="https://www.mpi-sws.org/">Max Planck Institute for Software Systems</a>,
 			advised by <a href="https://www.mpi-sws.org/people/bbb/">Björn Brandenburg</a>.
-			My advisor at Scuola Superiore Sant'Anna is <a href="http://retis.sssup.it/~giorgio/">Giorgio Buttazzo</a>.
+			My advisor at Scuola Superiore Sant'Anna was <a href="http://retis.sssup.it/~giorgio/">Giorgio Buttazzo</a>.
 		</p>
-		<p class="bigger"><strong>Curriculum Vitae:</strong> <a href="assets/pdf/cv_elucherini.pdf" target="_blank">[pdf]</a></p>
+		<p class="bigger"><span style="font-size:14pt"><strong>Master's Thesis:</strong></span> <em>Design and Implementation of a Memory Allocator to Achieve Cache Partitioning in the Linux Kernel.</em> <a href="assets/pdf/masters-thesis.pdf" target="_blank">[pdf]</a></p>
 		
-        <h2>Current work: Master's thesis @ MPI-SWS</h2>
+        <h1>Current work @ Northeastern University</h1>
 		<p>
-			I am implementing a software-based cache partitioning mechanism, called <em>page coloring</em>, on Linux PREEMPT-RT. In order to reduce interference caused by shared caches on multicore platforms, a portion of the last-level cache is exclusively dedicated to real-time applications, improving their predictability. Kernel processes are reserved an exclusive (different) partition in the last-level cache, as well. This effectively leads to a higher degree of isolation compared to previous implementation efforts.
+			I am investigating the privacy implications of social networks' ad targeting platforms. These services provide advertisers with a number of tools to directly select the users to whom their ad is shown. However, if not implemented carefully, direct ad targeting can leak users' personal information to advertisers. In this context, I am reverse-engineering the Facebook Ads platform to show how adversaries can exploit the interface to infer other users' personal information and online activity. The final goal is to propose a fix to prevent potential attacks, while maintaining the useful features of targeted advertising.
 		</p>
 		
-		<h2>Education</h2>
+		<h1>Education</h1>
 		
         <ul>
 			<li><strong>M.Sc. in Embedded Computing Systems</strong>,
-				Scuola Superiore Sant'Anna (2014-<em>present</em>).</li>
+				Sant'Anna School of Advanced Studies (Sep. 2014 - Oct. 2017).</li>
 			<li><strong>B.Sc. in Computer Engineering</strong>,
-				University of Pisa (2011-2014).</li>
+				University of Pisa (Sep. 2011 - Dec. 2014).</li>
 				
 		</ul>
 		
-		<h2>Academic Projects</h2>
+		<h1>Academic Projects</h1>
 		<ul>
-			<li><strong>Event-triggering system with iBeacon (Bluetooth Low Energy)</strong> in Node.js:
-				noise filtering, event logging, and possibility of seamlessly adding custom third-party events.
+			<li><strong>BeaCube: an event-triggering system with iBeacon (Bluetooth Low Energy)</strong>:
+				implemented noise filtering, event logging, and the possibility of seamlessly adding custom third-party events in Node.js.
 				<a href="https://github.com/elucherini/beacube/" target="_blank">[GitHub]</a> <a href="assets/pdf/beacube.pdf">[pdf]</a></li>
-			<li><strong>Scaled distributed application</strong> of monitoring of ski tracks and avalanches, on Contiki OS.
+			<li><strong>Snow level and avalanche monitoring simulation</strong> for low-power microcontrollers:
+				implemented a simulation of a sensor-and-actuator network with message exchange protocols and a RESTful interface in C.
 				<a href="https://github.com/elucherini/iot-snow-level-monitoring" target="_blank">[GitHub]</a> <a href="assets/pdf/snow.pdf">[pdf]</a></li>
-			<li><strong>Web interface for the visualization of official data</strong>
-				about the quality of the air in Italy (Bachelor's thesis). <a href="http://anasim.iet.unipi.it/moniqa/">[web]</a>
-			<li><strong>Real-time games:</strong>
-				fishing game (C, Allegro 4), 
-				"Candy Crush"-like multiplayer game for STM32F4 microcontrollers (C on Erika RTOS) 
+			<li><strong>MonIQA: a web interface to visualize official data</strong>
+				about the air quality in Italy in HTML5, CSS, Javascript, and PHP. <a href="http://anasim.iet.unipi.it/moniqa/">[web]</a></li>
+			<li><strong>"Candy Crush"-like multiplayer game</strong> for STM32F4 microcontrollers in C. 
 				<a href="https://github.com/elucherini/square-smash">[GitHub]</a> <a href="assets/pdf/candy.pdf">[pdf]</a>,
-				multiplayer First Person Shooter (XVR).</li>
+				</li>
 			<li><strong>Classifiers of risk perception</strong> in Matlab: neural networks, ANFIS, and genetic algorithms.
 				<a href="assets/pdf/classifier.pdf">[pdf]</a></li>
-			<li><strong>VHDL implementation of CRC:</strong> tested with Active-HDL, synthesized in Xilinx ISE.</li>
-			<li><strong>Position control of 3DoF haptic interface</strong> in Simulink:
-				kinematics of the device, driver calibration,
-				gravity compensation, and design of a digital controller.</li>
-		</ul>
       </section>
       <footer>
 		<p>
