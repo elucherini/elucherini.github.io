@@ -163,6 +163,7 @@ header ul a:active {
 
 header .email {
 	height:1.1em;
+  margin-left: -0.25em;
 }
 
 #photo {
@@ -212,7 +213,7 @@ footer {
   width:270px;
   float:left;
   position:fixed;
-  bottom:50px;
+  bottom:30px;
   -webkit-font-smoothing:subpixel-antialiased;
   line-height:10px;
 }
